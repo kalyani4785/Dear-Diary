@@ -1,0 +1,34 @@
+<title>Diary</title>
+<div class="wrapper" style="background-image: url('assets/mini.jpg'); background-size: cover;">
+	<div class="container">
+		<h1>Dear Diary</h1>
+		<!-- <form> -->
+			<!-- <input type="text" placeholder="Username" name="username" [(ngModel)]="username"><br> -->
+			<!-- <div *ngIf="requiredForm.controls['username'].errors?.required">Required
+			</div> -->
+
+			<!-- <small *ngIf="!requiredForm.get('username').valid && requiredForm.get('username').touched">
+				*invalid input
+			</small><br> -->
+			<!-- <input type="password" placeholder="Password" name="password" [(ngModel)]="password"><br> -->
+			<!-- <small *ngIf="requiredForm.get('password').touched">*wrong input</small><br> -->
+			<!-- <button class="btn" type="submit" id="login-button" (click)="loginValidation()" > <b>LOGIN</b></button> -->
+		<!-- </form> -->
+		<form [formGroup]="requiredForm">
+			<input type="text" placeholder="Username" name="username" [(ngModel)]="username" formControlName="username">
+			<!-- <mat-error *ngIf="requiredForm.controls['username'].touched">*required
+			</mat-error> -->
+			<br>
+			<input type="password" placeholder="Password" name="password" [(ngModel)]="password" formControlName="password">
+			<!-- <mat-error *ngIf="requiredForm.controls['password'].touched">*required
+			</mat-error> -->
+			<br>
+			<button class="btn" type="submit" id="login-button" (click)="loginValidation()" > <b>LOGIN
+				<!-- <mat-error *ngIf="requiredForm.controls['password'].touched && requiredForm.controls['username'].touched && !requiredForm.controls['username'].valid || !requiredForm.controls['password'].valid">
+					Invalid username or password
+				</mat-error> -->
+			</b></button>
+			
+		</form>
+	</div>
+</div>

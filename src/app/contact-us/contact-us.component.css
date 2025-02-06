@@ -1,0 +1,35 @@
+.container-width{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 25px;
+ 
+}
+.container{
+    color: #ffffff;
+    text-align: center;
+}
+p{
+    padding-top: 10%;
+    font-size: 25px;
+}
+.flex-container{
+    justify-content: center;
+    display: flex;
+    padding-top: 5px;
+}
+.flex-container > div{
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.btn{
+    background-color: transparent;
+    color: black;
+    opacity: 0.6;
+    font-size: 30px;
+}
+.btn:hover{
+    /* background-color: black; */
+    background-color: transparent;
+    opacity: 1;
+
+}

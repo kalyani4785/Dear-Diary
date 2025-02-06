@@ -1,0 +1,28 @@
+.container{
+    text-align: center;
+    padding:12px;
+    text-size-adjust: 30;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-us{
+    padding-top: 10px;
+    /* margin-bottom: 5%; */
+    word-spacing: 4%;
+    color: #c9c6c6;
+}
+h1{
+    
+}
+p{
+    padding-top: 65px;
+    font-size: larger;
+}
+footer{
+    color:grey;
+    text-align: center;
+    font-size: larger;
+}
